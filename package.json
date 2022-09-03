@@ -1,0 +1,48 @@
+{
+  "name": "@humandetail/scroller",
+  "version": "0.0.1",
+  "description": "A plugin that adds custom scrollbars to the DOM",
+  "author": "humandetail",
+  "private": false,
+  "main": "dist/scroller.umd.js",
+  "module": "dist/scroller.mjs",
+  "types": "src/packages/index.ts",
+  "files": ["dist/*", "src/packages/index.ts"],
+  "keywords": [
+    "scroller",
+    "scroll-bar"
+  ],
+  "homepage": "https://github.com/humandetail/scroller",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/humandetail/scroller"
+  },
+  "bugs": {
+    "url": "https://github.com/humandetail/scroller/issues",
+    "email": "512412344@qq.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build --mode lib",
+    "build:dts": "tsc src/packages/Scroller.ts --declaration --emitDeclarationOnly --esModuleInterop --outDir dist/",
+    "preview": "vite preview",
+    "lint": "eslint --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "*",
+    "vite": "^3.0.9"
+  },
+  "dependencies": {
+    "ismobilejs": "^1.1.1"
+  }
+}
